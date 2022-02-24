@@ -74,12 +74,20 @@
     margin-left: 1rem;
     border-radius: 10px;
     display: inline-flex;
+    
   }
 
+  #nav-button {
+    text-decoration: none !important; 
+  }
+
+
   .nav h2 {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 25px;
     padding: 0.5rem 1rem;
+    backdrop-filter: blur(20px);
+    
       
   }
 
@@ -100,8 +108,9 @@
     
 
 
-    a { 
+    #nav { 
     text-decoration: none;
+    color: white;
     /* margin-right: 20px; */
     }
 
@@ -125,8 +134,8 @@ ul {
 }
   
 h1 {
-    padding-bottom: 150px;
-    padding-top: 8vh;
+    padding-bottom: 50px;
+    padding-top: 40px;
 }
 
 li:hover {
@@ -168,9 +177,10 @@ li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 800px;
+    min-height: 600px;
+    height: auto;
     width: 800px;    
-    /* padding: 20px 200px; */
+    padding: 1rem 2rem;
 }
 
 .square {
@@ -230,19 +240,26 @@ li:hover {
 
 /* Projects Section */
 #projects-section {
-
+    /* height: 800px; */
 }
 
 .projects {
-    width: 1300px;
-    height: 1200px;
+    /* width: 1400px; */
+    width: fit-content;
+    
+    /* height: 800px; */
+    padding: 0 50px 100px 50px;
 }
+
+/* h1.project-title {
+    bottom: 0px !important;
+} */
 
 .projects-section-container {
     display: flex;
     position: relative;
     margin: auto;
-    height: 800px;
+    /* min-height: 800px; */
     /* width: 1000px; */
     margin-top: 75vh;
     /* border: 1px solid white; */
@@ -250,8 +267,16 @@ li:hover {
     justify-content: center;
 }
 
+#carousel-images {
+    width: 45vw;
+    height: auto;
+    margin-bottom: 6vh;
+    
+   
+}
+
 .slide {
-    width: 1000px;
+    /* width: 1000px; */
     /* height: auto; */
 }
 
@@ -270,11 +295,17 @@ li:hover {
     margin-bottom: -110px;
 }
 
+.entry-forms {
+    margin-top: 100px;
+}
+
 .email-entry {
-    background-color: white;
-    border: 1px solid white;
+    /* background-color: white; */
+    /* border: 1px solid white; */
     width: 25vw;
-    margin-bottom: 40px;
+    border-radius: 25px;
+    /* box-shadow: 0 0 30px #00f2ff; */
+    /* margin-bottom: 40px; */
 }
 
 
@@ -282,16 +313,17 @@ li:hover {
     position: relative;
     background-color: white;
     width: 25vw;
-    height: 500px;
-    margin-bottom: 40px;
+    height: 40vh;
+    margin-top: 2.5vh;
     /* box-shadow: 0 0 30px #00f2ff; */
+    border-radius: 25px;
 
 }
 
-.email-entry.message-entry:hover {
+/* .email-entry.message-entry:hover {
     box-shadow: 0 0 30px #00f2ff;
     
-}
+} */
 
 .contact-me-section-container{
     display: flex;
@@ -325,25 +357,3 @@ li:hover {
     cursor: pointer;
 }
 
-
-/* .line-1{
-    width: 15px;
-    height: 15px;
-    background: #f67c92;
-    display: inline-block;
-}
-.line-2{
-    width: 80px;
-    height: 1px;
-    background: #f67c92;
-    display: inline-block;
-}
-.line-3{
-    width: 60px;
-    height: 1px;
-    background: #f67c92;
-    display: inline-block;
-}
-.line{
-    line-height: 8px;
-} */
