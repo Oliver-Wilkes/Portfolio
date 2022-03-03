@@ -14,3 +14,21 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
+
+
+
+// Bootstap carousel function for project images
+$('#carousel-1, #carousel-2').carousel({
+  interval: false,
+  ride: false
+})
+
+
+
+// $(document).ready(function(){
+// 	$('#carousel-1, #carousel-2').carousel({
+//     ride: false,
+// 		keyboard: false,
+// 		pause: hover
+// 	});
+// })
