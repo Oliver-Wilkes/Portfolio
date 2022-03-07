@@ -198,9 +198,13 @@ li:hover {
 
 
 .textbox {
-  width: 85%;
+  width: 52vw;
   height: auto;
+  font-size: 20;
   /* border: 1px solid white; */
+  /* background-color: #00ADB5; */
+  border-radius: 15px;
+  padding: ;
   /* position: relative; */
 }
 
@@ -275,9 +279,6 @@ li:hover {
     padding: 0 100px 100px;
 }
 
-/* h1.project-title {
-    bottom: 0px !important;
-} */
 
 .projects-section-container {
     display: flex;
@@ -289,6 +290,14 @@ li:hover {
     /* border: 1px solid white; */
     align-items: center;
     justify-content: center;
+}
+
+h1 {
+  color: antiquewhite !important;
+}
+
+p {
+  color: antiquewhite;
 }
 
 .carousel-item {
@@ -303,6 +312,11 @@ li:hover {
     /* width: 1000px; */
     /* height: auto; */
 }
+
+
+
+
+/* Data X Section Styling */
 
 /* Contact Me Section */
 #contact-me-section{
@@ -328,6 +342,7 @@ li:hover {
 
 #contact {
     margin-bottom: -110px;
+    color: antiquewhite;
 }
 
 .entry-forms {
@@ -345,13 +360,12 @@ li:hover {
 
 
 .message-entry {
-    position: relative;
+    /* position: relative; */
     background-color: white;
     width: 25vw;
-    height: 40vh;
     margin-top: 2.5vh;
     /* box-shadow: 0 0 30px #00f2ff; */
-    border-radius: 25px;
+    border-radius: 5px;
 
 }
 
@@ -366,6 +380,7 @@ li:hover {
 }
 
 
+
 .action-buttons {
     margin-top: 50px;
     display: flex;
@@ -377,26 +392,31 @@ li:hover {
 .action-button {
     border-radius: 15px;
     padding: 0.5rem 2rem;
+    
 
 }
 
 #clear-button {
     /* background-color: red; */
+    background-color: ivory;
 
 }
 
 #clear-button:hover {
     box-shadow: 0 0 30px #d40f0f;
+    background-color: #d40f0f;
     transition: 300ms ease-in;
 }
 
 #send-button {
     /* background-color: rgb(24, 168, 24); */
+    background-color: ivory;
 
 }
 
 #send-button:hover {
     box-shadow: 0 0 30px #03b129;
+    background-color: #03b129;
     transition: 300ms ease-in;
 }
 
@@ -434,6 +454,9 @@ li:hover {
 }
 
 
+
+/* Progress bar if needed */
+/* 
 @if $enable-transitions {
     @keyframes progress-bar-stripes {
       0% { background-position-x: $progress-height;
@@ -443,7 +466,7 @@ li:hover {
 
 
   .progress-bar {
-    g fd gf
+    
   }
 
 
@@ -475,4 +498,4 @@ li:hover {
     to {
       opacity: 1;
     }
-  }
+  } */
