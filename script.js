@@ -23,12 +23,3 @@ $('#carousel-1, #carousel-2').carousel({
   ride: false
 })
 
-
-
-// $(document).ready(function(){
-// 	$('#carousel-1, #carousel-2').carousel({
-//     ride: false,
-// 		keyboard: false,
-// 		pause: hover
-// 	});
-// })
