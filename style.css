@@ -204,7 +204,6 @@ li:hover {
   /* border: 1px solid white; */
   /* background-color: #00ADB5; */
   border-radius: 15px;
-  padding: ;
   /* position: relative; */
 }
 
@@ -302,8 +301,8 @@ p {
 
 .carousel-item {
     width: 45vw !important;
-    height: auto;
-    max-height: 600px;
+    min-height: 50vh;
+    max-height: 50vh;
     margin-bottom: 6vh;
    
 }
@@ -432,6 +431,8 @@ p {
     left: 0;
     transform: translateY(-50%);
     scale: 3;
+    color: white;
+    /* background-color: white; */
     /* background-color: #00ADB5; */
     padding: 10px;
 }
@@ -440,6 +441,8 @@ p {
     width: 30px;
     margin: 0 auto 20px;
     cursor: pointer;
+    /* background-color: white; */
+    /* border-radius: 10px; */
 }
 
 
