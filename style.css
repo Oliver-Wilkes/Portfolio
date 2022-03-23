@@ -312,6 +312,7 @@ h1 {
 
 p {
   color: antiquewhite;
+  font-size: 22px;
 }
 
 .d-block {
@@ -321,7 +322,7 @@ p {
 
 .carousel-item img {
     width: 45vw !important;
-    /* min-height: 50vh; */
+    min-height: 50vh;
     height: auto;
     max-height: 350px;
     margin-bottom: 6vh;
