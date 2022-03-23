@@ -96,7 +96,7 @@
     border-radius: 25px;
     padding: 0.5rem 1rem;
     /* backdrop-filter: blur(20px); */
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     color: #eee;
     margin-left: 20px;
       
@@ -468,7 +468,7 @@ p {
 }
 .social-icons img{
     display: block;
-    width: 30px;
+    width: 60px;
     margin: 0 auto 20px;
     cursor: pointer;
     /* background-color: white; */
