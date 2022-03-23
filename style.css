@@ -92,31 +92,41 @@
 
   .nav h2 {
     /* border: 1px solid white; */
+    position: relative;
     border-radius: 25px;
     padding: 0.5rem 1rem;
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
     font-size: 1.2rem;
-    
+    color: #eee;
+    margin-left: 20px;
       
   }
 
   .nav h2:hover {
-      background-color: #ffffff;
-      transition: ease-in 300ms;
-      color: #00ADB5;
+      /* background-color: #ffffff; */
+      /* color: #00ADB5; */
       cursor: pointer;
   }
 
-  .nav h2 {
-      color: #eee;
-      margin-left: 20px;
+
+  .nav h2:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
   }
 
-  nav ul li { 
-    /* list-style: none; */
-    /* margin: 50px 20px; */
+
+  .nav h2:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
   }
-    
 
 
     #nav { 
@@ -156,15 +166,15 @@ li:hover {
     /* border: 1px solid #222831; */
 }
 
-
-  /* Style the button used to pause/play the video */
+/* Pause/Play Button Styling */
   #myBtn {
     position: fixed;
     bottom: 1rem;
     right: 2px;
     width: 100px;
     /* font-size: 1rem; */
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
+    /* padding: 10px 10px; */
     border: 2px solid #00ADB5;
     border-radius: 10px;
     background: rgb(255, 255, 255, 0);
@@ -236,7 +246,7 @@ li:hover {
     height: 800px;
     margin: auto;
     margin-bottom: 4rem;
-    margin-top: 75vh;
+    margin-top: 60vh;
     /* border: 1px solid white; */
     align-items: center;
     justify-content: center;
@@ -263,7 +273,7 @@ li:hover {
     position: relative;
     height: 800px;
     margin: auto;
-    margin-top: 75vh;
+    margin-top: 50vh;
     /* border: 1px solid white; */
     align-items: center;
     justify-content: center;
@@ -290,7 +300,7 @@ li:hover {
     margin: auto;
     /* min-height: 800px; */
     /* width: 1000px; */
-    margin-top: 75vh;
+    margin-top: 60vh;
     /* border: 1px solid white; */
     align-items: center;
     justify-content: center;
@@ -344,7 +354,7 @@ p {
   display: flex;
   position: relative;
   margin: auto;
-  margin-top: 75vh;
+  margin-top: 60vh;
   /* border: 1px solid white; */
   align-items: center;
   justify-content: center;
@@ -474,6 +484,41 @@ p {
     background-color: #00ADB5;
     
 }
+
+
+
+
+
+/* Fade in classes */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+ }
+
+
+ .fade-in.appear {
+  opacity: 1;
+ }
+
+
+
+
+/*
+
+
+Slide up animation
+
+.slide-up {
+  transform: translateY(50%);
+  transition: transform 400ms ease-in;
+}
+
+.slide-up.appear {
+  transform: translateY(0);
+} 
+
+*/
 
 
 
