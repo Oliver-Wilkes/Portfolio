@@ -37,7 +37,7 @@ $('#carousel-1, #carousel-2').carousel({
 // Fade-in sections
 
 const appearOptions = {
-  threshold: 0.8,
+  threshold: 0.6,
   // rootMargin: "0 0 -100px 0"
 };
 const appearOnScroll = new IntersectionObserver 
