@@ -332,7 +332,7 @@ p {
 }
 
 #contact {
-    margin-bottom: -110px;
+    /* margin-bottom: -110px; */
     color: antiquewhite;
 }
 
@@ -387,8 +387,8 @@ p {
 
 }
 
+/* 
 #clear-button {
-    /* background-color: red; */
     background-color: ivory;
     border: 1.4px solid #d40f0f;
 
@@ -398,13 +398,15 @@ p {
     box-shadow: 0 0 30px #d40f0f;
     background-color: #d40f0f;
     transition: 300ms ease-in;
-}
+} */
+
 
 #send-button {
     /* background-color: rgb(24, 168, 24); */
     background-color: ivory;
     border: 1.4px solid #03b129;
-
+    width: 20rem;
+    height: 10rem;
 }
 
 #send-button:hover {
@@ -501,32 +503,3 @@ Slide up animation
   }
 
 
-
-
-
-
-
-
-  .progress-bar {
-    width: 0%;
-    animation: progress 1.5s ease-in-out forwards;
- 
-     }
-
-  @keyframes progress {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes show {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  } */
