@@ -405,8 +405,9 @@ p {
     /* background-color: rgb(24, 168, 24); */
     background-color: ivory;
     border: 1.4px solid #03b129;
+    border-radius: 25px;
     width: 20rem;
-    height: 10rem;
+    height: 5rem;
 }
 
 #send-button:hover {
