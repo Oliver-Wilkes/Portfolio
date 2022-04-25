@@ -5,7 +5,7 @@ const faders = document.querySelectorAll('.fade-in')
 
 // Get the video
 var video = document.getElementById("myVideo");
-// video.playbackRate = 0.8;
+
 
 
 // Get the button
@@ -35,10 +35,8 @@ $('#carousel-1, #carousel-2').carousel({
 
 
 // Fade-in sections
-
 const appearOptions = {
   threshold: 0.6,
-  // rootMargin: "0 0 -100px 0"
 };
 const appearOnScroll = new IntersectionObserver 
 (function(
