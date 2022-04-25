@@ -188,7 +188,7 @@ h1 {
 .textbox {
   width: 35vw;
   height: auto;
-  font-size: 20;
+  /* font-size: 20; */
   border-radius: 15px;
 }
 
@@ -313,6 +313,10 @@ p {
 /* Data X Section Styling */
 
 /* Contact Me Section */
+div.section-text.contact-me {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 
 .contact-me-section-container{
   display: flex;
@@ -403,6 +407,8 @@ p {
 
 #send-button {
     /* background-color: rgb(24, 168, 24); */
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
     background-color: ivory;
     border: 1.4px solid #03b129;
     border-radius: 25px;
