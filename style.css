@@ -406,19 +406,22 @@ div.section-text.contact-me {
 
 
 #send-button {
-    /* background-color: rgb(24, 168, 24); */
+    /* background-color: #00ADB5; */
+    color: #00ADB5;
     font-family: 'Nunito', sans-serif;
     font-size: 2.5rem;
     background-color: ivory;
-    border: 1.4px solid #03b129;
+    border: 1.4px solid #00ADB5;
     border-radius: 25px;
     width: 20rem;
     height: 5rem;
 }
 
 #send-button:hover {
-    box-shadow: 0 0 30px #03b129;
-    background-color: #03b129;
+    box-shadow: 0 0 30px #00ADB5;
+    background-color: #00ADB5;
+    color: ivory;
+    /* border: 1.4px solid ivory; */
     transition: 300ms ease-in;
 }
 
