@@ -1,366 +1,342 @@
-            /* UNIVERSAL STYLING */
 * {
-    margin: 0;
-    padding: 0;   
+  margin: 0;
+  padding: 0;
 }
 
+/* Scrollbar */
 
-body {
-    background-image:url('Assets/Wellesley.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-
-
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
-    /* justify-content: center; */
-    /* align-items: center; */
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-/* List and Navbar styling */
-
-.navbar-brand {
-    margin-left: 1.5rem;
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
 
-
-  a:hover {
-    text-decoration: none !important ;
-  }
-  
-  li {
-    width: 5vw;
-    list-style: none;
-  }
-  
-  .nav {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0.5vh;
-    margin-right: 1vh;
-    color: #00adb5;
-    margin-left: 1rem;
-    border-radius: 10px;
-    display: inline-flex;
-    /* background-color: whitesmoke; */
-  }
-  
-  .nav h4 {
-    position: relative;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: black;
-    margin-right: 20px;
-
-    
-  }
-  
-  .nav h4:hover {
-    cursor: pointer;
-    background-color: #00adb5;
-    color: white;
-    transition: 400ms;
-  }
-  
-  .nav h4:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.4s ease-in-out;
-    
-  }
-  
-  .nav h4:hover:before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-  
-  #nav {
-    text-decoration: none;
-    color: white;
-  }
-
-
-  a:link {
-    text-decoration: none;
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: inset 0 0 6px rgba(7, 6, 6, 0.7);
 }
 
-
-
-
-
-
-
-
-/* Footer Styling */
-.footer {
-/* margin-top: 440px; */
-width: 100%;
-height: 3rem;
-background-color: rgba(255, 255, 255, 0.70);
-position: fixed;
-bottom: 0;
-text-align: center;
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-h6 {
-    margin-top: 14px !important;
+/* Header / Nav */
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+
+  top: 0;
+  left: 0;
+
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
-
-            /* PAGE SPECIFIC STYLING */
-
-             /* HOME */
-
-.index {
-    /* background-image:url('Assets/Wellesley.jpg') ; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    
-
-    background: url(Assets/Wellesley.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-
-
-
-
+a:hover {
+  text-decoration: none !important ;
 }
 
-.homeContentBox1 {
-    /* display: flex; */
-    /* position: absolute; */
-    margin: auto;
-    margin-top: 14vh;
-    /* border: 1px solid black; */
-    width: 40vw;
-    height: 32vh;
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 15px;
-    text-align: center;
-    padding: 2rem;
-    overflow-y: auto;
+li {
+  width: 5vw;
+  list-style: none;
 }
 
-
-.card-text {
-    padding: 10px;
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5vh;
+  margin-right: 1vh;
+  color: #00adb5;
+  margin-left: 1rem;
+  border-radius: 10px;
+  display: inline-flex;
 }
 
-/* .card-text-1 {
-    
-} */
+.nav h2 {
+  position: relative;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
 
-                /* BOOKING */
-
-#placeholder { 
-    /* border: 1px solid white;
-    width: 50px;
-    height: 50px; */
-
-
-    margin: auto;
-    margin-top: 10vh;
-    border: 1px solid black;
-    width: 40vw;
-    height: 70vh;
-    background-color: rgba(255, 255, 255, 0.65);
-    border-radius: 15px;
-    text-align: center;
-    padding-top: 300px;
-    
-    
-
+  color: #eee;
+  margin-left: 20px;
 }
 
-                /* FACILITIES */
-
-.facilitiesHeader {
-    width: 50%;
-    /* height: 6rem; */
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 150px;
-    text-align: center;
-    
+.nav h2:hover {
+  cursor: pointer;
 }
 
-
-
-
-.facilitiesContentBox1{
-    display: inline-flex;
-    justify-content: space-evenly;
-    margin-top: 15vh;
-    /* border: 1px solid black; */
-    width: 100%;
-    min-height: 30vh;
-    /* background-color: aliceblue; */
-    border-radius: 15px;
-    text-align: center;
-    /* overflow-y: hidden; */
-    
-    /* padding: 2rem; */
-    
+.nav h2:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
 }
 
+.nav h2:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 
-    
-                /* LOCATION */
+#nav {
+  text-decoration: none;
+  color: white;
+}
 
+h1 {
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
 
+/* Pause/Play Button Styling */
 
-/* Map Styling */
+#myBtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 2px;
+  width: 100px;
+  padding: 1rem 1rem;
+  border: 2px solid #00adb5;
+  border-radius: 10px;
+  background: rgb(255, 255, 255, 0);
+  backdrop-filter: blur(15px);
+  color: #00adb5;
+  cursor: pointer;
+}
 
-#map {
-    /* display: flex; */
-    height: 65vh;
-    width: 70%;
-    margin: auto;
-    top: 3rem;
-    border-radius: 30px;
-   
-    /* align-items: center; */
-    /* justify-content: center; */
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+  transition: 300ms ease-in;
+}
 
+/* Text Section Styling */
 
-  }
+.section-text {
+  backdrop-filter: blur(30px);
+  background-color: #2b384d57;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 40vw;
+  padding: 2rem 4rem;
+}
 
-/* Word box styling */
+.section-text p {
+  margin-top: 25px;
+}
 
-.words {
-    /* display: flex; */
-    background-color: aliceblue;
-    /* border: 1px solid black; */
-    margin: auto;
-    margin-top: 80px;
-    
-    width: 30%;
-    padding: 1.5rem 2rem;
-    border-radius: 15px;
-    text-align: center;
-    }
+.textbox {
+  width: 35vw;
+  height: auto;
 
+  border-radius: 15px;
+}
 
-    /* a.nav-link {
-        margin-right: 200px;
-    } */
+.square {
+  display: inline-block;
+}
 
+/* Introduction text  */
 
-    @keyframes fadeInAnimation {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+.intro-section-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  height: 800px;
+  margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 60vh;
 
-    }
+  align-items: center;
+  justify-content: center;
+}
 
+/* About Section */
 
-    /* Media Queries for smaller screen sizes */
-    @media (max-width:1001px) {
-        .facilitiesContentBox1 {
-            display: block;
-            align-items: center;
-        }
+.about-section-container {
+  display: flex;
+  position: relative;
+  height: 800px;
+  margin: auto;
+  margin-top: 50vh;
+  align-items: center;
+  justify-content: center;
+}
 
-        .card {
-            margin: auto;
-            margin-bottom: 4rem;
-        }
+/* Projects Section */
 
-    }
+.projects {
+  width: fit-content;
 
-    @media (max-width:680px) {
-        
-        .words {
-            width: 60%;
-        }
-        
-    }
+  padding: 0 100px 50px;
+}
 
-    @media (max-width:540px) {
-        .nav {
-            justify-content: center;
-        }
-        .nav h4 {
-            /* margin-left: 2px; */
-            margin: 0 6px;
-            /* margin: auto; */
-            /* margin: 0; */
-            padding: 0;
-        }
-        
-    }
+.projects-section-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  margin-top: 60vh;
 
+  align-items: center;
+  justify-content: center;
+}
 
+h1 {
+  color: antiquewhite !important;
+}
 
+p {
+  color: antiquewhite;
+  font-size: 22px;
+}
 
-    /* Carousel styling */
-    .d-block {
-        object-fit: contain;
-        margin: auto;
-        margin-top: 200px;
-        /* margin-bottom: 200px; */
-      }
-      
-      .carousel-item img {
-        width: 45vw !important;
-        min-height: 50vh;
-        height: auto;
-        max-height: 350px;
-        margin-bottom: 6vh;
-      }
+.d-block {
+  object-fit: contain;
+}
 
-      .projects {
-        width: fit-content;
-      
-        padding: 0 100px 50px;
-      }
-      
-      .projects-section-container {
-        display: flex;
-        position: relative;
-        margin: auto;
-        /* border: 5px solid blue; */
-        /* margin-top: 60vh; */
-      
-        align-items: center;
-        justify-content: center;
-      }
+.carousel-item img {
+  width: 45vw !important;
+  min-height: 50vh;
+  height: auto;
+  max-height: 350px;
+  margin-bottom: 6vh;
+}
 
+/* Contact Me Section */
 
-      .carousel-caption {
-        /* animation: fadeInAnimation ease 2s; */
-        /* animation-iteration-count: 1; */
-        /* animation-fill-mode: forwards; */
+div.section-text.contact-me {
+  background-color: rgba(0, 0, 0, 0);
+}
 
+.contact-me-section-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  margin-top: 60vh;
+  align-items: center;
+  justify-content: center;
+}
 
-        
-      }
+.contact-me {
+  margin-bottom: 160px;
+  padding-bottom: 70px;
+}
 
-      .carousel-control-prev {
-        padding-left: 100px;
-      }
+#contact {
+  color: antiquewhite;
+}
 
-      .carousel-control-next {
-        padding-right: 100px;
-      }
+.entry-forms {
+  margin-top: 100px;
+}
+
+.email-entry {
+  width: 25vw;
+  border-radius: 25px;
+}
+
+.message-entry {
+  background-color: white;
+  width: 25vw;
+  margin-top: 2.5vh;
+
+  border-radius: 5px;
+}
+
+.email-entry:hover {
+  box-shadow: 0 0 30px #00f2ff;
+  transition: 300ms ease-out;
+}
+
+.message-entry:hover {
+  box-shadow: 0 0 30px #00f2ff;
+  transition: 300ms ease-out;
+}
+
+.action-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.action-button {
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+}
+
+#send-button {
+  color: #00adb5;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5rem;
+  background-color: ivory;
+  border: 1.4px solid #00adb5;
+  border-radius: 25px;
+  width: 20rem;
+  height: 5rem;
+}
+
+#send-button:hover {
+  box-shadow: 0 0 30px #00adb5;
+  background-color: #00adb5;
+  color: ivory;
+
+  transition: 300ms ease-in;
+}
+
+/* Social media icons  */
+
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 90%;
+  margin-bottom: 15px;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+.social-icons img {
+  display: block;
+  width: 60px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+}
+
+.progress {
+  position: fixed;
+  width: 80%;
+  margin-top: 100px;
+  margin-left: 10%;
+  height: 50px;
+  background-color: #00adb5;
+}
+
+/* Fade in classes */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 0.99;
+}
